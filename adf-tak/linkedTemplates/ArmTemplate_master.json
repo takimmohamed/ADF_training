@@ -23,10 +23,6 @@
 			"type": "string",
 			"defaultValue": "/subscriptions/3e904dda-ff51-4698-8338-9035149977ef/resourceGroups/ADF_RG/providers/Microsoft.Storage/storageAccounts/takadfsa"
 		},
-		"mnagerTrigger_properties_typeProperties_scope": {
-			"type": "string",
-			"defaultValue": "/subscriptions/3e904dda-ff51-4698-8338-9035149977ef/resourceGroups/ADF_RG/providers/Microsoft.Storage/storageAccounts/takadfsa"
-		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -65,9 +61,6 @@
 					},
 					"managertrigger_properties_typeProperties_scope": {
 						"value": "[parameters('managertrigger_properties_typeProperties_scope')]"
-					},
-					"mnagerTrigger_properties_typeProperties_scope": {
-						"value": "[parameters('mnagerTrigger_properties_typeProperties_scope')]"
 					}
 				}
 			},

@@ -22,10 +22,6 @@
 		"managertrigger_properties_typeProperties_scope": {
 			"type": "string",
 			"defaultValue": "/subscriptions/3e904dda-ff51-4698-8338-9035149977ef/resourceGroups/ADF_RG/providers/Microsoft.Storage/storageAccounts/takadfsa"
-		},
-		"mnagerTrigger_properties_typeProperties_scope": {
-			"type": "string",
-			"defaultValue": "/subscriptions/3e904dda-ff51-4698-8338-9035149977ef/resourceGroups/ADF_RG/providers/Microsoft.Storage/storageAccounts/takadfsa"
 		}
 	},
 	"variables": {
@@ -912,36 +908,6 @@
 					"blobPathBeginsWith": "/source/blobs/csvfiles/Fact_Sales_1.csv",
 					"ignoreEmptyBlobs": true,
 					"scope": "[parameters('managertrigger_properties_typeProperties_scope')]",
-					"events": [
-						"Microsoft.Storage.BlobCreated"
-					]
-				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/pipelines/pipelinemanager')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/mnagerTrigger')]",
-			"type": "Microsoft.DataFactory/factories/triggers",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"runtimeState": "Started",
-				"pipelines": [
-					{
-						"pipelineReference": {
-							"referenceName": "pipelinemanager",
-							"type": "PipelineReference"
-						},
-						"parameters": {}
-					}
-				],
-				"type": "BlobEventsTrigger",
-				"typeProperties": {
-					"blobPathBeginsWith": "/source/blobs/csvfiles/Fact_Sales_1.csv",
-					"ignoreEmptyBlobs": true,
-					"scope": "[parameters('mnagerTrigger_properties_typeProperties_scope')]",
 					"events": [
 						"Microsoft.Storage.BlobCreated"
 					]
