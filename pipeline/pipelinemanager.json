@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "copy fact slates 1 CSV",
+				"name": "copy fact_slates_1_CSV",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -65,7 +65,7 @@
 				"type": "Delete",
 				"dependsOn": [
 					{
-						"activity": "copy fact slates 1 CSV",
+						"activity": "copy fact_slates_1_CSV",
 						"dependencyConditions": [
 							"Succeeded"
 						]
