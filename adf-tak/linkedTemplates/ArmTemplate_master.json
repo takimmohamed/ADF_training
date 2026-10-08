@@ -19,10 +19,6 @@
 			"type": "string",
 			"defaultValue": "https://takadfsa.dfs.core.windows.net/"
 		},
-		"MGR_trigger_properties_typeProperties_scope": {
-			"type": "string",
-			"defaultValue": "/subscriptions/3e904dda-ff51-4698-8338-9035149977ef/resourceGroups/ADF_RG/providers/Microsoft.Storage/storageAccounts/takadfsa"
-		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -58,9 +54,6 @@
 					},
 					"linkedserviceDL_properties_typeProperties_url": {
 						"value": "[parameters('linkedserviceDL_properties_typeProperties_url')]"
-					},
-					"MGR_trigger_properties_typeProperties_scope": {
-						"value": "[parameters('MGR_trigger_properties_typeProperties_scope')]"
 					}
 				}
 			},
