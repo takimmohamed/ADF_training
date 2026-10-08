@@ -19,7 +19,7 @@
 			"type": "string",
 			"defaultValue": "https://takadfsa.dfs.core.windows.net/"
 		},
-		"managertrigger_properties_typeProperties_scope": {
+		"MGR_trigger_properties_typeProperties_scope": {
 			"type": "string",
 			"defaultValue": "/subscriptions/3e904dda-ff51-4698-8338-9035149977ef/resourceGroups/ADF_RG/providers/Microsoft.Storage/storageAccounts/takadfsa"
 		}
@@ -888,7 +888,7 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/managertrigger')]",
+			"name": "[concat(parameters('factoryName'), '/MGR_trigger')]",
 			"type": "Microsoft.DataFactory/factories/triggers",
 			"apiVersion": "2018-06-01",
 			"properties": {
@@ -907,7 +907,7 @@
 				"typeProperties": {
 					"blobPathBeginsWith": "/source/blobs/csvfiles/Fact_Sales_1.csv",
 					"ignoreEmptyBlobs": true,
-					"scope": "[parameters('managertrigger_properties_typeProperties_scope')]",
+					"scope": "[parameters('MGR_trigger_properties_typeProperties_scope')]",
 					"events": [
 						"Microsoft.Storage.BlobCreated"
 					]
