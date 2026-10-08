@@ -1,0 +1,15 @@
+{
+	"name": "adf-tak",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "914fc4c0-4a88-40b7-ab12-1686d17e73eb",
+		"tenantId": "26637868-377f-47e2-b323-0eafd0bd6f2e"
+	}
+}
