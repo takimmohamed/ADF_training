@@ -84,6 +84,13 @@
 						"referenceName": "csv_source",
 						"type": "DatasetReference"
 					},
+					"logStorageSettings": {
+						"linkedServiceName": {
+							"referenceName": "linkedserviceDL",
+							"type": "LinkedServiceReference"
+						},
+						"path": "logging"
+					},
 					"enableLogging": true,
 					"storeSettings": {
 						"type": "AzureBlobFSReadSettings",
