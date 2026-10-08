@@ -13,6 +13,9 @@
 		},
 		"linkedserviceDL_properties_typeProperties_url": {
 			"value": "https://takadfsa.dfs.core.windows.net/"
+		},
+		"mnagerTrigger_properties_typeProperties_scope": {
+			"value": "/subscriptions/3e904dda-ff51-4698-8338-9035149977ef/resourceGroups/ADF_RG/providers/Microsoft.Storage/storageAccounts/takadfsa"
 		}
 	}
 }
