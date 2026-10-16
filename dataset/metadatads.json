@@ -1,10 +1,6 @@
 {
 	"name": "metadatads",
 	"properties": {
-		"linkedServiceName": {
-			"referenceName": "linkedserviceDL",
-			"type": "LinkedServiceReference"
-		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {

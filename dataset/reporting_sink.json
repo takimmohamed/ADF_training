@@ -1,10 +1,6 @@
 {
 	"name": "reporting_sink",
 	"properties": {
-		"linkedServiceName": {
-			"referenceName": "linkedserviceDL",
-			"type": "LinkedServiceReference"
-		},
 		"parameters": {
 			"p_file_name": {
 				"type": "string"

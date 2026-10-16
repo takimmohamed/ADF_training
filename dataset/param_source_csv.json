@@ -1,10 +1,6 @@
 {
 	"name": "param_source_csv",
 	"properties": {
-		"linkedServiceName": {
-			"referenceName": "linkedserviceDL",
-			"type": "LinkedServiceReference"
-		},
 		"parameters": {
 			"p_file_name": {
 				"type": "string"
